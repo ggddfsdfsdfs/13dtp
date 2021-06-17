@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header>
+  <img src="../static/images/pc.png" width="20px" />
+  <h1>budget builds forum</h1>
+  <a href="loginform"><button class="button">login/register &#128273;</button>
+  </a>
+  {% if current_user.is_authenticated %}
+    <a href="{{ url_for('logout')}}"><button class="button">logout</button>
+  {% endif %}
+  </a> <!-- i dont know why but this button code works-->
+  <a align="right">
+   <href="d"><button class="button">user:{{ session['username'] if current_user.is_authenticated else "guest"}}</button>
+   <!--this script is to shows the users username on the mainpage of the website-->
+  </a>
+  {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+    {% endfor %}
+</header>
+  <!--this code is the proerties of the buttion like color, size ,padding and margin size etc-->
+    <style>
+
+
+.button {background-color: #008CBA;} /* Blue */
+</style>
+</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Blog</title>
+    <link href="../static/style.css" rel="stylesheet" type="text/css" />
+<br>
+<br>
+<br>
+<br>
+<!--putting alot of line breaks makes the top bar be flush with the top since its a fixed postion-->
+
+    <main>
+      <!-- This article block is a single blog post Copy and paste to add additional posts -->
+      <article>
+        <h3>where to get and buy cheap pc parts</h3>
+        <hr />
+        <p>this list of websites is where you can get cheap computers parts for cheap.
+        </p>
+        <a
+        href="https://molten.org.nz/">• molten media
+        recycled parts
+        </a>
+        <br>
+        <a
+        href="http://www.ecocentral.co.nz/services/ecoshop">• ecoshop recycling center
+
+        </a>
+
+
+      </article>
+
+      <article>
+        <h3>announcments </h3>
+        <hr />
+        <p>new posts coming soon !</p>
+        <p class="date">date:now</p>
+      </article>
+      <article>
+        <h3>nominations</h3>
+        <hr />
+        <p>in development</p>
+        <hr />
+        <p>comments:</p>
+        <p class="date">date:now</p>
+      </article>
+    </main>
+    <footer>
+      <a ><button class="button"><a href="basetest">test devs only</a></button></a>
+     <p style="color:white"> (c) 2020 coolplace Ltd</p>
+    </footer>
+  </body>
+</html>

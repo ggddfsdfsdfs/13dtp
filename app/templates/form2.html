@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="generator" content=
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>login page</title>
+  <link href="../static/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<a href="index">
+  <img href="index" src="../static/images/pc.png" width="20px"/>
+</a>
+  <h1>budget builds forum</h1>
+</header>
+<br>
+<br>
+<br>
+<br>
+  <!--<"<article> is what makes the box with the gray boarder-->
+  <article>
+   <h3>register page</h3>
+   <hr>
+
+   <p>Register:</p>
+
+   <form method = "POST" action = "{{ url_for('addrec')}}" >
+    <label>Username</label> <input type="text" placeholder="yourmom11" name = "username" maxlength = "20">
+
+    <p><label>password</label> <input type="password" placeholder="123" name = "pass" maxlength = "40"></p>
+
+    <p><label>Email</label> <input type="email" placeholder="jerry@hotmail.com" name = "email" maxlength = "20"></p>
+    <br>
+    <input type = "submit" value = "submit" class="button3"/>
+    <br>
+    <br>
+    <button class="button3">
+       <a href="{{ url_for('regform')}}">login in here</a></button></a>
+  </form>
+</article>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>log</title>
+  <link href="../static/style.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+<a href="index">
+  <img href="{{ url_for('index')}}" src="../static/images/pc.png" width="20px"/>
+</a>
+  <h1>budget builds forum</h1>
+</header>
+<br>
+<br>
+<br>
+<br>
+<body>
+  <!--<article> is what makes the box with the gray boarder-->
+  <article>
+    <main>
+   <h3>login page</h3>
+   <hr>
+
+   <p>Sign in:</p>
+
+   <form method = "POST" action = "{{ url_for('login')}}" >
+    <label>email</label> <input type="text" placeholder="yourmom11@yahoo.com" name = "email" maxlength = "20"/>
+    <br>
+    <br>
+    <label>password</label> <input type="password"  name = "pass" maxlength = "40"/>
+    <br>
+    {% for message in get_flashed_messages() %}
+          <p>{{ message }}</p>
+      {% endfor %}
+    <br>
+    <input type = "submit" value = "submit" class="button3"/>
+</html>

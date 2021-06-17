@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700);
+
+body {
+  font-family: ubuntu;
+  margin: 0;
+  padding: 0;
+  background-image: url('../static/images/backround2.jpg');
+  width: auto;
+  float: center;
+}
+/*this css part is what changes the font to ubuntu which has an import link at the top*/
+h1 {
+  display: contents;
+}
+header {
+  display: flex;
+  align-items: center;
+  background: #e7e7ff;
+  position: fixed;
+  width: 999999999999999px;
+}
+/*this is for the header
+ which can be seen near the top in the mainpage.html
+ its made to have a fixed poistion
+ which means when you scroll thorught the website and the header moves with it
+ */
+header img {
+  width: 50px;
+  border-radius: 5px;
+  margin:  10px  20px;
+}
+/*the css is made to change the
+size of the image that is shown in the top left in all the html pages*/
+.button {
+  border: none;
+  float: right;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: auto;
+  border-radius: 5px;
+  margin: 10px 30px;
+  cursor: pointer;
+}
+/*this css is the main button css and is used for
+ most buttons on the website like the login/register, logout etc*/
+.button3 {
+  border: none;
+  background-color: 179, 179, 179;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: auto;
+  border-radius: 5px;
+  margin: none;
+  cursor: pointer;
+}
+article {
+  background: white;
+  border: 3px solid white;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+/*the css is the white boxs that contain all the text and content*/
+#input_container {
+    position:relative;
+    margin: none;
+    background:#ddd;
+    width: 200px;
+}
+#input {
+    height:20px;
+    margin:0;
+    padding-right: 30px;
+    width: 100%;
+}
+#input_img {
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    width:24px;
+    height:24px;
+}
+.footer0{
+    background-color:#ddd;
+    margin: 10px 30px;
+}
+/*this css is for the footer of the website which can be seen at the bottom*/
+hr, article .date {
+  color: #a0a0a0;
+}
